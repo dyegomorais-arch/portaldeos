@@ -4,7 +4,7 @@ const GRUPOS=[
   {titulo:'Metais Básicos',itens:[
     {os:'061',local:'Salobo',url:'https://dyegomorais-arch.github.io/agendamentos-061/'},
     {os:'516',local:'Carajás',url:'https://dyegomorais-arch.github.io/AGENDAMENTOS---516/index.html'},
-    {os:'061',local:'Sossego',url:''}
+    {os:'061',local:'Sossego',url:'https://dyegomorais-arch.github.io/agendamentos-061-sossego/'}
   ]},
   {titulo:'Outras OS',itens:[
     {os:'023',local:'',url:'https://dyegomorais-arch.github.io/agendamentos-023/'},
