@@ -11,7 +11,7 @@ main{position:relative;width:min(100%,940px)}
 h1{font-size:clamp(2rem,6vw,3rem);font-weight:700;letter-spacing:-.02em;line-height:1.05}
 .sub{color:var(--gray);margin:10px 0 28px}
 .grupos{display:grid;gap:18px;grid-template-columns:1fr}
-@media(min-width:780px){.grupos{grid-template-columns:1.55fr 1fr;align-items:start}}
+@media(min-width:780px){.grupos{grid-template-columns:1.8fr 1fr;align-items:start}}
 .painel{position:relative;background:rgba(29,31,35,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1.5px solid var(--line);border-radius:22px;padding:20px;overflow:hidden;animation:entra .7s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--g)*140ms + 150ms)}
 @keyframes entra{from{opacity:0;transform:translateY(18px)}}
 .painel::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,transparent,#d9dce1 25%,var(--red) 50%,#d9dce1 75%,transparent);background-size:220% 100%;animation:brilho 5s ease-in-out infinite}
@@ -27,9 +27,9 @@ h1{font-size:clamp(2rem,6vw,3rem);font-weight:700;letter-spacing:-.02em;line-hei
 .os:hover::after,.os:focus-visible::after{opacity:1}
 .os:focus-visible{outline:3px solid var(--red-l);outline-offset:3px}
 .os .l{font-size:.76rem;color:var(--gray);font-weight:600;position:relative;z-index:1}
-.os .b{display:flex;align-items:flex-end;justify-content:space-between;gap:8px;position:relative;z-index:1}
-.os .n{font-size:1.7rem;font-weight:700;line-height:1.05;word-break:break-word}
-.os .go{width:28px;height:28px;border-radius:50%;background:#2d3036;display:grid;place-items:center;flex:none;transition:background .2s,transform .25s}
+.os .b{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:6px 8px;position:relative;z-index:1}
+.os .n{font-size:1.3rem;font-weight:700;line-height:1.05;white-space:nowrap}
+.os .go{margin-left:auto;width:28px;height:28px;border-radius:50%;background:#2d3036;display:grid;place-items:center;flex:none;transition:background .2s,transform .25s}
 .os .go::after{content:"";width:7px;height:7px;border-right:2px solid #fff;border-top:2px solid #fff;transform:rotate(45deg) translate(-1px,1px)}
 .os:hover .go,.os:focus-visible .go{background:var(--red);transform:translateX(3px)}
 .os.last{border-color:var(--red)}
@@ -37,4 +37,5 @@ h1{font-size:clamp(2rem,6vw,3rem);font-weight:700;letter-spacing:-.02em;line-hei
 .os.soon{opacity:.55;cursor:default;border-style:dashed}
 .os.soon:hover{transform:none;box-shadow:none;border-color:var(--line)}
 .foot{margin-top:26px;color:var(--gray);font-size:.8rem}
+@media(max-width:430px){.cards{grid-template-columns:1fr}.os{min-height:92px}.os .n{font-size:1.6rem}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.poeira{display:none}}
