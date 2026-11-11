@@ -36,6 +36,5 @@ h1{font-size:clamp(2rem,6vw,3rem);font-weight:700;letter-spacing:-.02em;line-hei
 .ult{font-size:.66rem;font-weight:600;color:#fff;background:var(--red);padding:3px 8px;border-radius:99px;position:absolute;top:11px;right:11px;z-index:1}
 .os.soon{opacity:.55;cursor:default;border-style:dashed}
 .os.soon:hover{transform:none;box-shadow:none;border-color:var(--line)}
-.foot{margin-top:26px;color:var(--gray);font-size:.8rem}
 @media(max-width:430px){.cards{grid-template-columns:1fr}.os{min-height:92px}.os .n{font-size:1.6rem}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.poeira{display:none}}
