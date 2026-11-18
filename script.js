@@ -5,6 +5,9 @@ const GRUPOS=[
     {os:'061',local:'Salobo',url:'https://dyegomorais-arch.github.io/agendamentos-061/'},
     {os:'516',local:'Carajás',url:'https://dyegomorais-arch.github.io/AGENDAMENTOS---516/index.html'},
     {os:'061',local:'Sossego',url:'https://dyegomorais-arch.github.io/agendamentos-061-sossego/'}
+  ]},
+  {titulo:'Outras OS',pequeno:true,itens:[
+    {os:'025',local:'',url:'https://dyegomorais-arch.github.io/agendamentos-025/index.html'}
   ]}
 ];
 const CH='agendamento_portal_ultima';
@@ -12,7 +15,7 @@ let ultima=null;try{ultima=localStorage.getItem(CH)}catch(e){}
 const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x)e.textContent=x;return e};
 const box=document.getElementById('grupos');
 GRUPOS.forEach((g,gi)=>{
-  const p=el('section','painel');p.style.setProperty('--g',gi);
+  const p=el('section','painel'+(g.pequeno?' mini':''));p.style.setProperty('--g',gi);
   const h=el('h2','',g.titulo);h.append(el('small','',g.itens.length+(g.itens.length>1?' sistemas':' sistema')));
   const cards=el('div','cards');
   g.itens.forEach(s=>{

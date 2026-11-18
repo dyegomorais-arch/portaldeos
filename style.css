@@ -11,7 +11,7 @@ main{position:relative;width:min(100%,940px)}
 h1{font-size:clamp(2rem,6vw,3rem);font-weight:700;letter-spacing:-.02em;line-height:1.05}
 .sub{color:var(--gray);margin:10px 0 28px}
 .grupos{display:grid;gap:18px;grid-template-columns:1fr}
-@media(min-width:780px){.grupos{grid-template-columns:1fr;align-items:start}}
+@media(min-width:780px){.grupos{grid-template-columns:1.8fr 1fr;align-items:start}}
 .painel{position:relative;background:rgba(32,38,47,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1.5px solid var(--line);border-radius:22px;padding:20px;overflow:hidden;animation:entra .7s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--g)*140ms + 150ms)}
 @keyframes entra{from{opacity:0;transform:translateY(18px)}}
 .painel::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,transparent,#E58C76 25%,var(--red) 50%,#E58C76 75%,transparent);background-size:220% 100%;animation:brilho 5s ease-in-out infinite}
@@ -39,3 +39,10 @@ h1{font-size:clamp(2rem,6vw,3rem);font-weight:700;letter-spacing:-.02em;line-hei
 .foot{margin-top:26px;color:var(--gray);font-size:.8rem}
 @media(max-width:430px){.cards{grid-template-columns:1fr}.os{min-height:92px}.os .n{font-size:1.6rem}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.poeira{display:none}}
+
+.painel.mini{padding:14px}
+.painel.mini h2{font-size:1rem;margin-bottom:10px}
+.painel.mini .cards{grid-template-columns:1fr}
+.painel.mini .os{min-height:72px;padding:10px 14px;gap:8px;border-radius:14px}
+.painel.mini .os .n{font-size:1.1rem}
+.painel.mini .os .go{width:24px;height:24px}
