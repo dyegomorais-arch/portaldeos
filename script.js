@@ -7,11 +7,10 @@ const GRUPOS=[
     {os:'061',local:'Sossego',url:'https://dyegomorais-arch.github.io/agendamentos-061-sossego/'}
   ]},
   {titulo:'Outras OS',itens:[
-    {os:'023',local:'',url:'https://dyegomorais-arch.github.io/agendamentos-023/'},
     {os:'025',local:'',url:'https://dyegomorais-arch.github.io/agendamentos-025/index.html'}
   ]}
 ];
-const CH='portal_ultima';
+const CH='agendamento_portal_ultima';
 let ultima=null;try{ultima=localStorage.getItem(CH)}catch(e){}
 const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x)e.textContent=x;return e};
 const box=document.getElementById('grupos');
